@@ -1,38 +1,229 @@
-.App {
-  text-align: center;
+/*  */
+:root {
+  --devMountain-blue: #34a5da;
+  --project-black: #222222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
+  background: var(--devMountain-blue);
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding-left: 70px;
+}
+
+.body-container {
+  background: var(--project-black);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-card-container {
+  background: #fff;
+  width: 80%;
+  height: 400px;
+  margin-top: 80px;
+  display: flex;
+  padding-left: 25px;
+  justify-content: space-evenly;
+  box-shadow: -5px -5px 30px black;
+}
+
+.edit-form {
+  background: #fff;
+  width: 80%;
+  height: 400px;
+  margin-top: 80px;
+  display: flex;
+  padding-left: 25px;
+  justify-content: space-evenly;
+  box-shadow: -5px -5px 30px black;
+}
+
+.active-form {
+  width: 80%;
+  height: 400px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  justify-content: space-around;
+  box-shadow: -5px -5px 30px black;
+}
+
+.form-card {
+  height: 400px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  left: 100px;
+}
+
+.name-form {
+  display: flex;
+  width: 700px;
+}
+
+.name-input {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.user-stats {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.user-stat-input {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 100px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 700px;
+}
+
+.movie-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 600px;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-input {
+  text-align: center;
+  width: 500px;
+  margin: 5px;
+}
+
+.form-btn-div {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inactive {
+  display: none;
+}
+
+.user-data {
+  width: 550px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 30px;
+  justify-self: start;
+  /* margin-right: 450px; */
+  margin-top: 20px;
+}
+
+.card-count {
+  height: 40px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* need to put all user states in p tags */
+ul li p {
+  margin-left: 10px;
+  padding-top: 2px;
+}
+
+.button-container {
+  width: 79%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blue-btn {
+  margin: 20px;
+  margin-top: 10px;
+  padding: 6px 15px;
+  background: var(--devMountain-blue);
+  border-radius: 10px;
+}
+
+.blue-btn:active {
+  transform: scale(0.97);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.2);
+  background: #2386b4;
+}
+
+button {
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-btn {
+  background: transparent;
+  font-size: 16px;
+}
+
+.submit-input {
+  margin: 20px;
+  margin-top: 10px;
+  padding: 6px 15px;
+  background: var(--devMountain-blue);
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  position: relative;
+  left: 400px;
+}
+
+.cancel-btn {
+  position: relative;
+  bottom: -150px;
+  right: 500px;
+}
+
+.cancel-edit-btn {
+  height: 28px;
+  position: relative;
+  top: 325px;
+  right: 450px;
+}
+
+.submit-input:active {
+  transform: scale(0.97);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.2);
+  background: #2386b4;
 }
